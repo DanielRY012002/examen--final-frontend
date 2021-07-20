@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <span> &nbsp; Examen Final</span>
+  <span class="example-spacer"></span>
+  <mat-icon>person_outline</mat-icon>
+  <button mat-button [matMenuTriggerFor]="menu"> {{this.nombre}} {{this.apellido}} </button>
+  <mat-menu #menu="matMenu">
+    <button (click)="logout()" mat-menu-item>Logout</button>
+  </mat-menu>
+</mat-toolbar>
+<router-outlet></router-outlet>
